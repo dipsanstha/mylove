@@ -1165,7 +1165,8 @@ body {
 
 .photo-frame {
     position: relative;
-    width: 100%;
+    width: 540px;
+
     aspect-ratio: 1; /* Square aspect ratio as requested */
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     border-radius: 20px;
@@ -1423,12 +1424,12 @@ body {
     }
 
     .photo-item {
-        width: 90%;
+        width: 540px;
         max-width: 340px;
     }
 
     .photo-frame {
-        width: 100%;
+        width: 100px;
         aspect-ratio: 1;
     }
 
@@ -1447,6 +1448,11 @@ body {
     .journey-card {
         padding: 1.5rem;
         margin: 1rem 0;
+    }
+    
+    /* Make room for music player in journey section */
+    .journey-section {
+        padding-top: 80px;
     }
 
     #memory-card {
@@ -1517,7 +1523,12 @@ body {
     
     /* Adjust main content spacing */
     .main-content {
-        padding-top: 60px; /* Make space for fixed music player */
+        padding-top: 80px; /* Make space for fixed music player */
+    }
+    
+    /* Make room for music player in journey section */
+    .journey-section {
+        padding-top: 60px;
     }
     
     /* Adjust photo gallery */
