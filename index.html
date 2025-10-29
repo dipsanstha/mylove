@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday, My Love 💕</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- GSAP Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -48,8 +48,8 @@
                     <div class="birthday-date">🎂 November 2nd 🎂</div>
                 </div>
 
-                <div class="birthday-message">
-                    <p class="romantic-message">
+                <div class="birthday-message" >
+                    <p class="romantic-message" style="background: linear-gradient(120deg,white,rgb(151, 208, 244));">
                         Every moment with you is a celebration, but today is extra special because it's YOUR day!
                         You've brought so much joy, love, and happiness into my life. I want to make this birthday
                         as beautiful and amazing as you are.
@@ -94,7 +94,7 @@
                         <div class="photo-item">
                             <div class="photo-frame">
                                 <video alt="Our first beautiful moment together" class="memory-video" autoplay muted loop>
-    <source src="vid/date.webm" type="video/webm">
+    <source src="vid/moment.webm" type="video/webm">
 </video>
                                 <div class="photo-overlay">
                                     <div class="photo-icon">💕</div>
@@ -223,16 +223,39 @@
                 <!-- Final birthday surprise -->
                 <div class="journey-card" id="surprise-card">
                     <h3>🎊 The Grand Finale</h3>
-                    <div class="birthday-surprise">
+                    <div class="surprise-container">
                         <div class="surprise-box" onclick="openSurprise()">
-                            <div class="gift-icon">🎁</div>
-                            <p>Click to open your birthday surprise!</p>
-                            <div class="sparkles">✨</div>
+                            <div class="gift-box">
+                                <div class="gift-box-bottom"></div>
+                                <div class="gift-box-top">
+                                    <div class="gift-lid"></div>
+                                    <div class="gift-bow">
+                                        <div class="bow-center"></div>
+                                        <div class="bow-loop bow-loop-left"></div>
+                                        <div class="bow-loop bow-loop-right"></div>
+                                    </div>
+                                    <p class="surprise-text">Click to open your birthday surprise!</p>
+                                </div>
+                            </div>
+                            <div class="sparkles">
+                                <div class="sparkle">✨</div>
+                                <div class="sparkle">✨</div>
+                                <div class="sparkle">✨</div>
+                            </div>
+                        </div>
                         </div>
                         <div class="surprise-content" id="surprise-content">
                             <!-- This will be revealed when clicked -->
+                            <div class="birthday-banner" id="birthday-banner">
+                                <div class="banner-text">Happy Birthday Maya!</div>
+                                <div class="banner-decoration">
+                                    <span>🎉</span>
+                                    <span>🎂</span>
+                                    <span>🎈</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    
                 </div>
             </section>
         </div>
