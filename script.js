@@ -1091,9 +1091,19 @@ function showCakeWithCandle() {
                         </div>
                     </div>
                 </div>
-                        </div>
-                    </div>
-                `;
+            </div>
+            
+            <!-- Love Video -->
+            <div class="love-video-container">
+                <h3 class="video-title">A Special Moment for You 💝</h3>
+                <video class="love-video" controls>
+                    <source src="vid/lov.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-message">This is my love for you, growing stronger every day ❤️</p>
+            </div>
+        </div>
+    `;
 
     // Arrange cake and letter side-by-side
     try {
