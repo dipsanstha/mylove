@@ -691,6 +691,9 @@ body {
     background: linear-gradient(135deg, #f2eeef, #a28491);
     border-radius: 8px;
     padding: 1.2rem;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    overflow-y: auto;
+    max-height: 80vh;
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     border: 1px solid rgba(0,0,0,0.1);
     position: relative;
@@ -1366,7 +1369,7 @@ body {
 .surprise-content {
     width: 100%;
     min-height: 100vh;
-    max-height: 100vh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1388,8 +1391,15 @@ body {
     opacity: 1;
     visibility: visible;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     padding: 20px 0;
     box-sizing: border-box;
+    overscroll-behavior-y: contain; /* Prevent pull-to-refresh */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /* Show banner when surprise is visible */
